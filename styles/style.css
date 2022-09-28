@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------HEADER--------------- */
+
+.header{
+    width: 100%;
+    height: 30vh;
+    background-image: url(../assets/banner.jpg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img{
+    width: 3rem;
+}
+
+/* ------------ GENERAL SECTION -----------*/
+
+.caja-general{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------- NAV ----------------- */
+
+.nav {
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(0,128,1,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.enlaces{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    padding: .5rem;
+}
+
+/* --------- MAIN SECTION ----------- */
+
+.caja-productos{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.productos {
+    height: 18rem;
+    width: 15rem;
+    background-color: rgba(85,172,86,255);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .1rem;
+    
+}
+
+.productos img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* --------------- CAJA ADICIONAL -------------- */
+
+.caja-adicional{
+    width: 100%;
+    height: 296px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.imagen-adicional{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagen-adicional img{
+    width: 28rem;
+    border-radius: 2.5rem;
+}
+
+.informacion{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* ---------- FOOTER ------------- */
+
+.footer{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(132,255,190,255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer fieldset{
+    padding: 1rem;
+}
+
+.footer a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+/* -------- MEDIAQUERIES ------------ */
+
+@media screen and (max-width: 1090px) {
+    .nav{
+        height: 3rem;
+    }
+
+    .enlaces{
+        padding: 1rem;
+    }
+    
+    .productos{
+        height: 25rem;
+        width: 22rem;
+    }
+
+    .imagen-adicional{
+        width: 50%;
+    }
+
+    .imagen-adicional img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        height: 14vh;
+    }
+    
+    .productos{
+        height: 30rem;
+        width: 90%;
+    }
+    .productos h2{
+        font-size: 2rem;
+    }
+
+    .productos p{
+        font-size: 1.5rem;
+    }
+
+    .caja-adicional {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+    
+    .imagen-adicional{
+        width: 90%;
+    }
+
+    .imagen-adicional img{
+        width: 100%;
+    }
+
+    .informacion{
+        width: 90%;
+        align-items: center;
+    }
+
+    .footer{
+        height: auto;
+        padding: .5rem;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .header{
+        height: 10vh;
+    }
+    
+    .imagen-adicional{
+        width: 90%;
+    }
+    
+    .imagen-adicional img{
+        width: 100%;
+    }
+}
